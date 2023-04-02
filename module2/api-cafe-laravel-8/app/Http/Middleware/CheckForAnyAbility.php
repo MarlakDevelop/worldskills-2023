@@ -20,7 +20,6 @@ class CheckForAnyAbility extends Middleware
                 return $next($request);
             }
         }
-        var_dump($abilities);
         return throw new HttpResponseException(response()->json([
             'error' => [
                 'code' => 403,
